@@ -255,6 +255,10 @@ a {
     margin-left: auto;
 }
 
+.hero__media.animate__fadeInUp {
+    animation-duration: 1s;
+}
+
 .hero__images {
     display: flex;
     align-items: center;

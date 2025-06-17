@@ -94,6 +94,12 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <!-- styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- header -->
@@ -147,7 +153,11 @@
                     </div>
                 </div>
                 <!-- hero -->
-                <section class="hero">
+                <section
+                    class="hero"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                >
                     <section class="hero__content">
                         <h1 class="hero__heading">
                             Exceptional dental care for all ages.
@@ -198,6 +208,9 @@
                                 src="./assets/img/service.jpg"
                                 alt="Our services"
                                 class="service_image"
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
+                                data-aos-once="true"
                             />
                         </figure>
                         <div>
@@ -835,9 +848,15 @@
                     </div>
                 </div>
                 <div class="footer__bottom-row">
-                    <p class="footer__copyright">2021 GDN. Copyright and All rights reserved.</p>
+                    <p class="footer__copyright">
+                        2021 GDN. Copyright and All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
